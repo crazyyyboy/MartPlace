@@ -290,6 +290,133 @@
       font-size: 16px;
    }
 }
+
+//end items
+
+//start slider
+
+.slider{
+   background-color: #eff1f5;
+   padding: 120px 0;
+}
+.slider__title-inner{
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   height: 110px;
+   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+   margin-bottom: 50px;
+}
+.slider__title{
+   color: #000;
+   font-size: 30px;
+   padding-left: 30px;
+}
+.slider__items{
+   display: flex;
+   justify-content: space-between;
+   &-img{
+      max-width: 555px;
+      height: 450px;
+      width: 100% ; 
+   }
+   &-inner{
+      background-color: #fff;
+      max-width: 585px;
+      padding: 46px 50px 24px 50px;
+   }
+   &-title{
+      color: #000;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 12px;
+   }
+   &-info{
+      display: flex;
+   }
+   &-avatar{
+      width: 30px;
+      height: 30px;
+      margin-right: 9px;
+   }
+   &-name{
+      color: #000;
+      margin-right: 45px;
+   }
+   &-wordpress{
+      color: #7347c1;
+      position: relative;
+      &:before{
+         content: '';
+         position: absolute;
+         background-image: url(../images/content/wordpress.png);
+         width: 16px;
+         height: 16px;
+         left: -20px;
+         top: 8px;
+      }
+   }
+   &-text{
+      font-size: 16px;
+      line-height: 30px;
+      color: $gray;
+   }
+   &-plagins{
+      display: flex;  
+      margin-bottom: 68px;
+      position: relative;
+      &:after{
+         content: '';
+         position: absolute;
+         height: 1px;
+         max-width: 485px;
+         background-color: #ececec;
+         bottom: -45px;
+         width: 100%;
+      }
+      a + a{
+         margin-left: 7px;
+      }   
+   }
+   &-plagin{
+      background-color: #f1f3f6;
+      padding: 0 17px;
+      color: #868c96;
+      border-radius: 15px;
+   } 
+   &-rate{
+      display: flex;
+      align-items: center;
+      height: 32px;
+      justify-content: space-between;
+   }  
+   &-price{
+      font-weight: 500;
+      color: #fff;
+      line-height: 32px;
+      border-radius: 16px;
+      background-color: $blue;
+      padding: 7px 19px;
+      margin-right: 45px;
+   }
+   &-like{
+      color: $gray;
+      margin-right: 43px;
+   }
+   &-cart{
+      color: $blue;      
+   }
+}
+.slick-slider{
+   button{
+      border: none;
+      background-color: #7347c1;
+      color: #fff;
+   }
+}
+
+//end slider
+
  
  
  
