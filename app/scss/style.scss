@@ -1,6 +1,6 @@
 @import 'vars';
 @import 'global';
-
+@import 'fonts';
 
 
 //start header
@@ -587,4 +587,70 @@
     padding-top: 8px;
  }
  
- 
+ //end slider-2
+
+ //start statistic
+
+ .statistic{
+    background-color: #212225;
+    padding: 90px 0;
+    &__inner{
+       display: flex;
+       justify-content: space-between;
+    }
+    &__sale{
+       color: #feb71d;
+       &-img{
+         &::before{
+            content: "\f290";           
+            color: #feb71d;
+          }
+       }
+    }
+    &__sales{
+       color: #58c9e9;
+       &-img{
+         &::before{
+            content: "\f0ed";
+            color: #58c9e9;
+          }
+       }
+    }
+    &__customers{
+       color: #77de51;
+       &-img{
+         &::before{
+            content: "\f118";
+            color: #77de51;
+          }
+       }
+    }
+    &__members{
+       color: #ff6a6d;
+       &-img{
+         &::before{
+            content: "\f2c0";          
+            color: #ff6a6d;
+          }
+       }
+    }
+ }
+ .statistic__item{
+    line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-summa{
+       font-size: 36px;
+       margin-bottom: 7px;
+    }
+    &-text{
+       font-size: 18px;
+       color: #fff;
+    }
+    &-img{
+      font-size: 48px;
+      font-family: 'icomoon';
+      margin-bottom: 45px;
+    }
+ }
