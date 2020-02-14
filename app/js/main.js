@@ -18,4 +18,6 @@ $(function(){
       nextArrow: '<button class="slick-next slick-arrow"><img src="images/right.png" alt=""></button>',
     });
 
+    var mixer = mixitup('.product__inner-box');
+
 });
