@@ -12,6 +12,10 @@ $(function(){
     $('.slider__inner').slick({
       dots: false,
       arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: '<button class="slick-prev slick-arrow"><img src="images/left.png" alt=""></button>',
+      nextArrow: '<button class="slick-next slick-arrow"><img src="images/right.png" alt=""></button>',
     });
 
 });

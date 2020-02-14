@@ -307,13 +307,37 @@
    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
    margin-bottom: 50px;
 }
+.slick-slider{
+   button{
+      border: none;  
+
+   }
+}
+.slick-arrow{
+   width: 55px;
+   height: 45px;
+   background-color: #7347c1;
+   position: absolute;
+   outline: none;
+}
+.slick-prev{
+   border-radius: 23px 0 0 23px;
+   top: -127px;
+   right: 85px;
+  
+}
+.slick-next{
+   border-radius: 0 23px 23px 0;
+   top: -127px;
+   right: 30px;  
+}
 .slider__title{
    color: #000;
    font-size: 30px;
    padding-left: 30px;
 }
 .slider__items{
-   display: flex;
+   display: flex !important;
    justify-content: space-between;
    &-img{
       max-width: 555px;
@@ -407,13 +431,7 @@
       color: $blue;      
    }
 }
-.slick-slider{
-   button{
-      border: none;
-      background-color: #7347c1;
-      color: #fff;
-   }
-}
+
 
 //end slider
 
