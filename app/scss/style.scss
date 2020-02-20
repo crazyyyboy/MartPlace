@@ -736,9 +736,57 @@
    line-height: 30px;
    color: $gray;
    padding: 0 30px;
-   
+}
+
+ //end advantages
+ //start buy-sell
+
+.buy-sell{
+   margin-bottom: 110px;
+   color: #fff;
+   &__img{
+      padding: 100px 0 45px;
+   }
+   &__title{
+      font-size: 36px;
+      margin-bottom: 30px;
+   }
+   &__text{
+      font-size: 16px;
+      max-width: 580px;
+      margin: 0 auto;
+      margin-bottom: 45px;
+   }
+   &__btn{
+      background-color: #fff;
+      font-size: 16px;
+      border-radius: 27px;
+      padding: 16px 30px;
+   }
+}
+.buy-sell__inner{
+   display: flex;
+}
+.buy-sell__item{
+   min-height: 560px;
+   width: 51%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   text-align: center;
+}
+.buy__item{
+   background-image: url(../images/buy.png);
+}
+.sell__item{
+   background-image: url(../images/sell.png);
+}
+.buy__btn{
+   color: $blue;
+}
+.sell__btn{
+   color: $purple;
 }
 
 
-
- //end advantages
+ //end buy-sell
