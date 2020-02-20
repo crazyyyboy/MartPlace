@@ -492,7 +492,6 @@
       justify-content: space-between;
    }
 }
-
 .product__item{
    display: flex !important;
    flex-direction: column;
@@ -654,3 +653,92 @@
       margin-bottom: 45px;
     }
  }
+
+ //end statistic
+ //start advantages
+
+.advantages{
+   padding: 110px 0 120px;
+}
+.advantages__title{
+   font-size: 36px;
+   text-align: center;
+   color: #000;
+   margin-bottom: 20px;
+   span{
+      color: $blue;
+   }
+}
+.advantages__text{
+   max-width: 680px;
+   text-align: center;
+   color: $gray;
+   font-size: 18px;
+   margin: 0 auto 55px;
+}
+.advantages__inner{
+   display: flex;
+   flex-wrap: wrap;
+}
+.advantages__item{
+   box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+   max-width: 360px;
+   padding: 20px 20px 50px 20px;
+}
+.advantages__item-number{
+   color: #dfe8ff;
+   font-size: 48px;
+   font-weight: 300;
+}
+.lnr{
+   display: inline-block;
+   fill: currentColor;
+   width: 1em;
+   height: 1em;
+   vertical-align: -0.05em;
+   margin-bottom: 30px;
+   margin-left: 130px;
+}
+.lnr-license{
+   font-size: 60px;
+   color: $blue;
+}
+.lnr-magic-wand{
+   color: #7f4ec2;
+   font-size: 60px;
+}
+.lnr-lock{
+   font-size: 60px;
+   color: #77de51;
+}
+.lnr-chart-bars{
+   font-size: 60px;
+   color: #feb71d;
+}
+.lnr-leaf{
+   font-size: 60px;
+   color: #58c9e9;
+}
+.lnr-phone{
+   font-size: 60px;
+   color: #ff6a6d;
+}
+.advantages__item-title{
+   text-align: center;
+   font-size: 24px;
+   color: #000;
+   margin-bottom: 20px;
+}
+   
+.advantages__item-text{
+   text-align: center;
+   font-size: 14px;
+   line-height: 30px;
+   color: $gray;
+   padding: 0 30px;
+   
+}
+
+
+
+ //end advantages
