@@ -696,32 +696,42 @@
    width: 1em;
    height: 1em;
    vertical-align: -0.05em;
-   margin-bottom: 30px;
-   margin-left: 130px;
 }
 .lnr-license{
    font-size: 60px;
    color: $blue;
+   margin-bottom: 30px;
+   margin-left: 130px;
 }
 .lnr-magic-wand{
    color: #7f4ec2;
    font-size: 60px;
+   margin-bottom: 30px;
+   margin-left: 130px;
 }
 .lnr-lock{
    font-size: 60px;
    color: #77de51;
+   margin-bottom: 30px;
+   margin-left: 130px;
 }
 .lnr-chart-bars{
    font-size: 60px;
    color: #feb71d;
+   margin-bottom: 30px;
+   margin-left: 130px;
 }
 .lnr-leaf{
    font-size: 60px;
    color: #58c9e9;
+   margin-bottom: 30px;
+   margin-left: 130px;
 }
 .lnr-phone{
    font-size: 60px;
    color: #ff6a6d;
+   margin-bottom: 30px;
+   margin-left: 130px;
 }
 .advantages__item-title{
    text-align: center;
@@ -788,5 +798,86 @@
    color: $purple;
 }
 
-
  //end buy-sell
+ //start commets
+
+.commets{
+   padding-bottom: 110px;
+}
+.commets__title{
+   font-size: 36px;
+   color: #000;
+   text-align: center;
+   margin-bottom: 25px;
+   span{
+      color: $blue;
+   }
+}
+.commets__text{
+   font-size: 16px;
+   color: $gray;
+   text-align: center;
+   max-width: 685px;
+   margin: 0 auto 55px;
+   line-height: 30px;
+}
+.commets__inner{
+   display: flex;
+}
+.commets__item{
+   border-left: 2px solid $blue;
+   box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+   padding: 40px 40px 40px 50px;
+   margin-bottom: 60px;
+   & + .commets__item{
+      margin-right: 30px;
+   }
+   &-img{
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+   }
+   &-box{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+   }
+   &-wrapper{
+      display: flex;
+      align-items: center;
+   }
+   &-name{
+      font-size: 20px;
+      color: #000;
+   }
+   &-product{
+      font-size: 16px;
+      color: $gray;
+   }
+   &-text{
+      font-size: 16px;
+      color: $gray;
+   }
+}
+.commets__btn{
+   background-color: $blue;
+   text-align: center;
+   
+   font-size: 16px;
+   padding: 17px 35px;
+   border-radius: 27px;
+}
+.lnr-bubble{
+   font-size: 60px;
+   color: #e8e8e8;
+}
+.commets__button{
+   text-align: center;
+}
+
+
+ 
+
+ //end commets
+
