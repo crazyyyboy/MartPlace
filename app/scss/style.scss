@@ -46,13 +46,14 @@
       background-color: $blue;
       color: #fff;
       border-radius: 18px;
-      margin-right: 219px;
+      margin-right: 50px;
       padding: 6px 19px 6px 18px;
    }
    &-profile{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-left: 50px;
    }
    &-avatar{
       background-repeat: no-repeat;
@@ -71,6 +72,44 @@
    &-balans{
       color: $blue;
    }
+}
+.header__inner-icon{
+   position: relative;
+   span{
+      position: absolute;
+      top: -11px;
+      right: -17px;
+      line-height: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 11px;
+      text-align: center;
+      padding: 0 5px;
+   }
+   & + .header__inner-icon{
+      margin-left: 30px;
+   }
+}
+.header__inner-icon-notification{
+   span{
+      background-color: #ff6a6c;
+   }  
+}
+.header__inner-icon-message{
+   span{
+      background-color: #62d03b;
+   } 
+}
+.header__inner-icon-cart{
+   span{
+      background-color: $blue;
+   } 
+}
+.lnr-alarm,
+.lnr-envelope2,
+.lnr-cart{
+   font-size: 20px;
+   color: #7e8fa1;
 }
 .header__menu-inner{
    display: flex;
