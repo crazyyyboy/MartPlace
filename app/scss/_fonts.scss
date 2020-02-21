@@ -25,11 +25,32 @@
    -moz-osx-font-smoothing: grayscale;
  }
  
+ .icon-twitter:before {
+   content: "\f099";
+ }
+ .icon-facebook:before {
+   content: "\f09a";
+ }
+ .icon-facebook-f:before {
+   content: "\f09a";
+ }
+ .icon-pinterest:before {
+   content: "\f0d2";
+ }
+ .icon-linkedin:before {
+   content: "\f0e1";
+ }
  .icon-cloud-download:before {
    content: "\f0ed";
  }
  .icon-smile-o:before {
    content: "\f118";
+ }
+ .icon-dribbble:before {
+   content: "\f17d";
+ }
+ .icon-google:before {
+   content: "\f1a0";
  }
  .icon-shopping-bag:before {
    content: "\f290";
