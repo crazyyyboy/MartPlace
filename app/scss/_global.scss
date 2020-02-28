@@ -54,9 +54,8 @@ button{
    outline: none;
    cursor: pointer;
    border: none;
+   background-color: #fff;
 }
-
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -67,4 +66,26 @@ button{
 }
 .footer {
 	flex: 0 0 auto;
+}
+.breadcrumbs{    
+   &__inner{
+      li{
+         position: relative;
+         & + li{
+            padding-left: 18px;
+            &::before{
+               position: absolute;
+               content: '/';
+               left: 3px;
+               color: #fff;
+            }
+         }
+         &:last-child{
+            a,
+            span{
+               color: #bfcad7;
+            }                  
+         }           
+      }
+   }      
 }
