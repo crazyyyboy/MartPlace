@@ -157,26 +157,256 @@
       outline: none;
    }
 }
- 
-.profile__menu{
-   box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-   width: 270px;
+.cart__item{
+   display: flex;
+   padding: 26px 24px;
+   border-bottom: 1px solid #e8ebf0;
+   &-wrapper{
+      padding-left: 15px; 
+      width: 270px;  
+      .cart__inner{
+         display: flex;
+         justify-content: space-between;
+         .cart__title{
+            font-size: 16px;
+            font-weight: 500; 
+            display: inline-block;   
+            width: 200px;
+            padding-right: 15px;   
+            line-height: 22px; 
+         }
+         .cart__trash{
+            background-color: #f1ecf9;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 10px;
+            &::before{
+               content: "\e811";
+               font-family: 'Linearicons-Free';
+               position: absolute;
+               transform: translate(-50%, -50%);
+            }
+         }   
+      }
+      .cart__info{
+         .slider__items-wordpress.product__item-wordpress{
+            margin-left: 20px;
+         }
+         .cart__price{
+            color: $blue;
+            font-weight: 500;
+            background-color: #e6f1fd;
+            padding: 0 12px;
+            border-radius: 17px;
+            margin-left: 25px;
+         }
+      }
+   }
+   .cart__img{
+      width: 80px;
+      height: 70px;
+   }
+   .cart__info{
+      display: flex;
+      justify-content: space-between;
+   }
+}
+.cart__item:first-child{
+   padding-top: 0;
+}
+.notification__menu{
+   width: 370px;
+   left: -30px;
+   padding: 0 25px;
+}
+.notification__title{
+   display: flex;
+   border-bottom: 1px solid #e8ebf0;
+   justify-content: space-between;
+   padding-bottom: 15px;
+   &-text{
+      font-size: 18px;
+   }
+   &-btn{
+      color: $blue;
+      margin-right: 5px;
+   }
+}
+.notification__inner{
+   display: flex;
+   justify-content: space-between;
+   &-img{
+      height: 42px;
+   }
+}
+.notification__info{
+   display: flex;
+   align-items: center;
+}
+.notification__text{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20px;
+   width: 225px;
+   padding-right: 20px;
+   margin-bottom: 6px;
+   color: #333;
+   &-comment{
+      font-size: 15px;
+      font-weight: 400;
+      color: #747a86;
+   }
+   &-name{
+      color: $blue;
+      font-weight: 400;
+   }
+}
+.notification__btn{
+   background-color: #f1ecf9;
+   height: 32px !important;
+   width: 32px !important;
+   border-radius: 50%;
+   position: relative;
+}
+.notification__btn.lnr-heart{ 
+   &:before{
+      color: $blue;
+   }
+}
+.notification__btn.lnr-bubble{ 
+   &:before{
+      color: $purple;
+      font-size: 15px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+   }
+}
+.notification__btn.lnr-cart{ 
+   &:before{
+      color: #ff6a6c;
+      font-size: 15px;
+   }
+}
+.notification__btn.lnr-star{ 
+   &:before{
+      color: #62d03a;
+      font-size: 15px;
+   }
+}
+.notification__time{
+   color: #747a86;
+   padding-left: 62px;
+}
+.notification__item{
+   padding-top: 20px;
+   
+   & + .notification__item{
+      border-top: 1px solid #e8ebf0;
+   }
+}
+.message__menu{
+   padding: 0 25px;
+   width: 370px;
+   .notification__inner{
+      justify-content: start;
+   }
+   .notification__info{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      min-height: 60px;
+      width: 100%;
+   }
+   .notification__message{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+   .message__time{
+      color: $blue;
+      font-size: 14px;
+      line-height: 20px;
+   }
+   .notification__name{
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: 500;
+      margin-left: 14px;
+      &::after{
+         content: "\e818";
+         font-family: 'Linearicons-Free';
+         padding-left: 10px;
+         color: $blue;
+      }
+   }
+   .message__text{
+      width: 250px;
+      color: $gray;
+      overflow: hidden;
+   }
+}
+.cart__menu,
+.profile__menu,
+.message__menu,
+.notification__menu{
    height: 0;
-   position: absolute;
    overflow: hidden;
-   padding: 0 20px;
-   top: 100px;
-   z-index: 1;
+   position: absolute;
+   box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
    transition: all .3s;
-   left: 0;
    border-top: 0px solid $blue;
    background-color: #fff;
+   z-index: 1;
+   top: 100px; 
+}
+.cart__menu{ 
+   width: 400px; 
+   right: -40px;
+   .cart__total-price{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 25px;
+      font-weight: 500;
+      font-size: 18px;
+      height: 70px;
+      .cart__total{
+         padding-left: 20px;
+      }
+   }
+   .cart__btn{
+      height: 70px;   
+      display: flex;  
+      text-align: center;
+      &-cart,
+      &-checkout{
+         display: inline-block;
+         height: 100%;
+         background-color: $blue;
+         width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      } 
+      &-checkout{
+         background-color: $purple;
+      }
+      &-cart{
+         background-color: $blue;
+      }
+   }
+}
+.profile__menu{
+   width: 270px;
+   padding: 0 20px; 
+   right: 0; 
    a.lnr{
       color: #54667a;
       font-size: 15px;
       margin: 0;
-      width: 100%; 
-      height: 100% !important;  
+      width: 100%;     
       &::before{
          margin-right: 15px;
       }
@@ -189,10 +419,30 @@
       padding: 6px 10px;
       &:hover{
          background-color: $blue;
+         border-radius: 2px;
       }
    }
 }
-.header__inner-profile{
+.cart__box,
+.message__box,
+.notification__box{
+   padding-top: 33px;
+   margin-left: 30px;
+   &:hover{
+      .cart__menu,
+      .message__menu,
+      .notification__menu{
+         border-top-width: 1px;
+         height: auto;
+         overflow: auto;
+         padding-top: 26px;
+      }
+   }
+}
+.header__inner-profile,
+.cart__box,
+.message__box,
+.notification__box{
    height: 100px;
    position: relative;
    &:hover{
