@@ -36,6 +36,8 @@ $(function(){
       nextArrow: '<button class="slick-next slick-arrow"><img src="images/right.png" alt=""></button>',
     });
 
+ 
+
     $('.page__button-colum').on('click', function(){
       $('.new-items__item').addClass('list');
       $('.page__button-colum').addClass('active');
@@ -47,6 +49,15 @@ $(function(){
       $('.page__button-row').addClass('active');
       $('.page__button-colum').removeClass('active');
    });
+
+   $('.corporate__tabs .tab').on('click', function(event) {
+      var id = $(this).attr('data-id');
+         $('.corporate__tabs').find('.tab-item').removeClass('active-tab').hide();
+         $('.corporate__tabs .tabs').find('.tab').removeClass('active');
+         $(this).addClass('active');
+         $('#'+id).addClass('active-tab').fadeIn();
+         return false;
+      });
 
     var mixer = mixitup('.product__inner-box, .content-row__inner');
 
