@@ -2586,10 +2586,35 @@
       padding: 9px 0;
    } 
 }
- 
- 
 
 //end plan
+//start terms
+
+.terms{
+   background-color: #eff1f5;
+   padding: 60px 0 120px;
+}
+.terms__inner{
+   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+   border-radius: 4px;
+   padding-bottom: 70px;
+   background-color: #fff;
+}
+.terms__title{
+   font-size: 24px;
+   border-bottom: 1px solid #e8ebf0;
+   padding: 40px 30px 30px 30px;
+   font-weight: 500;
+}
+.terms__text{
+   font-size: 16px;
+   line-height: 30px;
+   color: $gray;
+   padding: 0 30px;
+}
+
+
+//end terms
 
 
  
