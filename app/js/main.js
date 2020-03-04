@@ -68,6 +68,8 @@ $(function () {
       return false;
    });
 
+   $('input[type="checkbox"]').styler();
+
    var mixer = mixitup('.product__inner-box, .content-row__inner');
 
 });
