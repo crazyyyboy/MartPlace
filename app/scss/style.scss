@@ -2894,6 +2894,62 @@
 }
 
 //end login
+//start howitworks
+
+.gradient-breadcrumbs.gradient{
+   padding: 80px 0 20px;
+   .gradient__info{
+      font-weight: 500;
+      font-size: 30px;
+      max-width: 400px;
+      text-align: center;
+      margin: 0 auto 50px;
+      color: #fff;
+      line-height: 50px;
+      span{
+         font-weight: 300;
+      }
+   }
+}
+.howitworks__item{
+   display: flex;
+   justify-content: space-between;
+   padding: 100px 0;
+}
+.howitworks__item-reverse{
+   background-color: #eff1f5;
+}
+.howitworks__info{
+   max-width: 455px;
+}
+.howitworks__title{
+   margin: 30px 0;
+   font-size: 30px;
+}
+.howitworks__text{
+   font-size: 16px;
+   color: $gray;
+   line-height: 30px;
+   margin-bottom: 25px;
+}
+.howitworks__btn{
+   a{
+      color: $blue;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+      padding: 15px 35px;
+      border-radius: 25px;
+      transition: all .4s;
+      &:hover{
+         color: #fff;
+         background-color: $blue;
+      }
+   }
+}
+
+ 
+
+//end howitworks
 
 
  
