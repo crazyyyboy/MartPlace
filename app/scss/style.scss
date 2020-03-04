@@ -2814,6 +2814,8 @@
    padding-bottom: 20px;
    color: $gray;
    border-bottom: 1px solid #e8ebf0;
+   max-width: 430px;
+   margin: 0 auto;
 }
 .login__form{
    padding: 20px 50px 50px 50px;
@@ -2874,6 +2876,20 @@
    color: #898f96;
    a{
       color: $blue;
+   }
+}
+.recover__text{
+   padding: 50px 50px 20px 50px;
+   font-size: 16px;
+   color: $gray;
+   border-bottom: 1px solid #e8ebf0;
+   line-height: 30px;
+}
+.recover{
+   .login__form{
+      button{
+         margin-bottom: 0;
+      }
    }
 }
 
