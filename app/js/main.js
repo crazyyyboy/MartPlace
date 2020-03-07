@@ -34,6 +34,22 @@ $(function () {
       slidesToScroll: 3,
       prevArrow: '<button class="slick-prev slick-arrow"><img src="images/left.png" alt=""></button>',
       nextArrow: '<button class="slick-next slick-arrow"><img src="images/right.png" alt=""></button>',
+      responsive: [
+         {
+           breakpoint: 1200,
+           settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+           }
+         },
+         {
+            breakpoint: 860,
+            settings: {
+             slidesToShow: 1,
+             slidesToScroll: 1,
+            }
+          },
+      ]
    });
 
    $('.favourites__wrapper').slick({
