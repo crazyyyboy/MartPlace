@@ -4,6 +4,30 @@ $(function () {
       $('.items__category-down').slideToggle();
    });
 
+   $('.header__menu-btn').on('click', function () {
+      $('.menu-list').slideToggle();
+   });
+
+   $('.header__menu-adaptiv').on('click', function () {
+      $('.header__inner-text').toggleClass('header__inner-text-disable');
+      $('.header__inner-img').toggleClass('header__inner-img-disable');
+      $('.header__inner-login').toggleClass('header__inner-login-active');
+   });
+
+   $('.dropdown__menu-home').on('click', function(){
+      $('.header__dropdown-home').toggleClass('active');
+   });
+   $('.dropdown__menu-product').on('click', function(){
+      $('.header__dropdown-product').toggleClass('active');
+   });
+   $('.dropdown__menu-wordpress').on('click', function(){
+      $('.header__dropdown-wordpress').toggleClass('active');
+   });
+   $('.dropdown__menu-pages').on('click', function(){
+      $('.header__dropdown-pages').toggleClass('active');
+   });
+   
+
    $(".slider__items-star, .rate-star").rateYo({
       starWidth: "15px",
       rating: 5,
